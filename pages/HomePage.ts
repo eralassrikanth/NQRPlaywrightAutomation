@@ -40,9 +40,9 @@ export class HomePage {
         this.lnkAboutUs = page.locator(".nav-bar__link.link[href='/pages/about-us']");
         this.lnkBlog = page.locator(".nav-bar__link.link[href='/blogs/news']");
         this.lnkYearofSale = page.locator(".nav-bar__link.link[href='https://nqr.com.au/pages/year-of-grocery-giveaways']");
-        
 
-        
+
+
 
 
     }
@@ -109,8 +109,78 @@ export class HomePage {
         }
     }
 
+    async clickShopOnlinelnk() {
+        try {
+            await this.lnkShopOnline.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Create Account link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clickweeklySpecialslink() {
+        try {
+            await this.lnkWeeklySpecials.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Weekly Specials link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clcikFindAStorelink() {
+        try {
+            await this.lnkFindAStore.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Find A Store link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clickSignUpNowlink() {
+        try {
+            await this.lnkSignUpNow.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Sign Up Now link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clickContactUslink() {
+        try {
+            await this.lnkContactUs.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Contact Us link': ${error}`);
+            throw error;
+        }
+    }
 
 
+    async clickAboutUslink() {
+        try {
+            await this.lnkAboutUs.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'About Us link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clickBloglink() {
+        try {
+            await this.lnkBlog.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Blog link': ${error}`);
+            throw error;
+        }
+    }
+
+    async clickYearofSalelink() {
+        try {
+            await this.lnkYearofSale.click();
+        } catch (error) {
+            console.log(`Exception occurred while clicking 'Year of Sale link': ${error}`);
+            throw error;
+        }
+    }
 
 
 
