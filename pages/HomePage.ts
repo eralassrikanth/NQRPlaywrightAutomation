@@ -11,6 +11,16 @@ export class HomePage {
     private readonly btnSearch: Locator;
     private readonly btnMyAccount: Locator;
     private readonly lnkCreateAcc: Locator;
+    private readonly lnkShopOnline: Locator;
+    private readonly lnkWeeklySpecials: Locator;
+    private readonly lnkFindAStore: Locator;
+    private readonly lnkSignUpNow: Locator;
+    private readonly lnkContactUs: Locator;
+    private readonly lnkAboutUs: Locator;
+    private readonly lnkBlog: Locator;
+    private readonly lnkYearofSale: Locator;
+
+
 
 
     //constructors
@@ -21,7 +31,19 @@ export class HomePage {
         this.btnSearch = page.locator("button[aria-label='Search']");
         this.txtSearchBox = page.locator("input[placeholder='Search...']");
         this.btnMyAccount = page.locator("//a[@class='header__action-item-link hidden-pocket hidden-lap']");
-         this.lnkCreateAcc = page.locator("//a[@class='link link--accented']");
+        this.lnkCreateAcc = page.locator("//a[@class='link link--accented']");
+        this.lnkShopOnline = page.locator(".nav-bar__link.link[href='/collections']");
+        this.lnkWeeklySpecials = page.locator(".nav-bar__link.link[href='/pages/weekly-specials']");
+        this.lnkFindAStore = page.locator(".nav-bar__link.link[href='/pages/find-a-store']");
+        this.lnkSignUpNow = page.locator(".nav-bar__link.link[href='/pages/sign-up-now']");
+        this.lnkContactUs = page.locator(".nav-bar__link.link[href='/pages/contact-us']");
+        this.lnkAboutUs = page.locator(".nav-bar__link.link[href='/pages/about-us']");
+        this.lnkBlog = page.locator(".nav-bar__link.link[href='/blogs/news']");
+        this.lnkYearofSale = page.locator(".nav-bar__link.link[href='https://nqr.com.au/pages/year-of-grocery-giveaways']");
+        
+
+        
+
 
     }
 
