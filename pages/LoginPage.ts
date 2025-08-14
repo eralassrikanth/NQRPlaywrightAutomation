@@ -58,14 +58,14 @@ export class HomePage {
     }
 
     
-    async clickForgotPwdlnk() {
+   /* async clickForgotPwdlnk() {
         try {
             await this.lnkCreateAcc.click();
         } catch (error) {
             console.log(`Exception occurred while clicking 'Forgot Password link': ${error}`);
             throw error;
         }
-    }
+    }*/
 
 
 
