@@ -66,16 +66,84 @@ export class HomePage {
     //Check if shop online link exists
 
     async isShopOnlineLinkExists(): Promise<boolean> {
-        const link = this.page.locator('text=Shop Online'); // Adjust selector as needed
-        return await link.isVisible();
+
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Shop Online' });
+        const isVisible = await link.isVisible();
+        console.log(`Shop Online link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
     }
 
     //Check if Weekly Specials link exists 
 
     async isWeeklySpecialsLinkExists(): Promise<boolean> {
-        const link = this.page.locator('text=Weekly Specials'); // Adjust selector as needed
-        return await link.isVisible();
+
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Weekly Specials' });
+        const isVisible = await link.isVisible();
+        console.log(`Weekly Specials link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
     }
+
+    //check if Find A Store link exists
+
+    async isFindAStoreLinkExists(): Promise<boolean> {
+
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Find A Store' });
+        const isVisible = await link.isVisible();
+        console.log(`Find A Store link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+    //check if Sign Up Now link exists
+    async isSignUpNowLinkExists(): Promise<boolean> {
+
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Sign Up Now' });
+        const isVisible = await link.isVisible();
+        console.log(`Sign Up Now link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+    //check if Contact Us link exists
+    async isContactUsLinkExists(): Promise<boolean> {
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Contact Us' });
+        const isVisible = await link.isVisible();
+        console.log(`Contact Us link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+    //check if About Us link exists
+    async isAboutUsLinkExists(): Promise<boolean> { 
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'About Us' });
+        const isVisible = await link.isVisible();
+        console.log(`About Us link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+    //check if Blog link exists
+    async isBlogLinkExists(): Promise<boolean> { 
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Blog' });
+        const isVisible = await link.isVisible();
+        console.log(`Blog link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+    //check if Year of Sale link exists
+    async isYearofSaleLinkExists(): Promise<boolean> {
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Year of Sale' });
+        const isVisible = await link.isVisible();
+        console.log(`Year of Sale link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
+
+
 
     //Enter text in searxh box
     async enterTextSearch() {

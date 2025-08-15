@@ -24,21 +24,25 @@ test('Check links in Home Page', async ({ page }) => {
     expect(await homePage.isHomePageExists()).toBeTruthy();
 
     //Verify Shop Online link in Home Page
-    //expect(await homePage.isShopOnlineLinkExists()).toBeTruthy();
+    expect(await homePage.isShopOnlineLinkExists()).toBeTruthy();
 
+    //Verify Weekly Specials link in Home Page
+    expect(await homePage.isWeeklySpecialsLinkExists()).toBeTruthy();
 
+    //Verify Find A Store link in Home Page
+    expect(await homePage.isFindAStoreLinkExists()).toBeTruthy();
 
-    const isVisible = await homePage.isShopOnlineLinkExists();
+    //Verify Sign Up Now link in Home Page
+    expect(await homePage.isSignUpNowLinkExists()).toBeTruthy();        
 
-    if (isVisible) {
-        console.log('✅ Shop Online link is visible on the page.');
-    } else {
-        console.log('❌ Shop Online link is NOT visible on the page.');
-    }
+    //Verify Contact Us link in Home Page
+    expect(await homePage.isContactUsLinkExists()).toBeTruthy();
 
+    //Verify About Us link in Home Page
+    expect(await homePage.isAboutUsLinkExists()).toBeTruthy();
 
-
-
+    //Close the browser
+    await page.close();
 }
 
 
