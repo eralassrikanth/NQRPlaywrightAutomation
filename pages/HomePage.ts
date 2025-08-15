@@ -63,6 +63,20 @@ export class HomePage {
         }
     }
 
+    //Check if shop online link exists
+
+    async isShopOnlineLinkExists(): Promise<boolean> {
+        const link = this.page.locator('text=Shop Online'); // Adjust selector as needed
+        return await link.isVisible();
+    }
+
+    //Check if Weekly Specials link exists 
+
+    async isWeeklySpecialsLinkExists(): Promise<boolean> {
+        const link = this.page.locator('text=Weekly Specials'); // Adjust selector as needed
+        return await link.isVisible();
+    }
+
     //Enter text in searxh box
     async enterTextSearch() {
 
