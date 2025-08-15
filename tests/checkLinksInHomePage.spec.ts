@@ -33,13 +33,26 @@ test('Check links in Home Page', async ({ page }) => {
     expect(await homePage.isFindAStoreLinkExists()).toBeTruthy();
 
     //Verify Sign Up Now link in Home Page
-    expect(await homePage.isSignUpNowLinkExists()).toBeTruthy();        
+    expect(await homePage.isSignUpNowLinkExists()).toBeTruthy();
 
     //Verify Contact Us link in Home Page
     expect(await homePage.isContactUsLinkExists()).toBeTruthy();
 
     //Verify About Us link in Home Page
     expect(await homePage.isAboutUsLinkExists()).toBeTruthy();
+
+    //verify Blog link in Home Page
+    expect(await homePage.isBlogLinkExists()).toBeTruthy();
+
+    //verify My Account button in Home Page
+    expect(await homePage.isMyAccountBtnExists()).toBeTruthy();
+
+    //verify Create Account link in Home Page
+    expect(await homePage.isMyAccountBtnExists()).toBeTruthy();
+
+    //verify Yearly Specials link in Home Page
+    expect(await homePage.isYearofSaleLinkExists()).toBeTruthy();
+
 
     //Close the browser
     await page.close();

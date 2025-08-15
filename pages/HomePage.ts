@@ -30,7 +30,7 @@ export class HomePage {
 
         this.btnSearch = page.locator("button[aria-label='Search']");
         this.txtSearchBox = page.locator("input[placeholder='Search...']");
-        this.btnMyAccount = page.locator("//a[@class='header__action-item-link hidden-pocket hidden-lap']");
+        this.btnMyAccount = page.locator(".header__action-item-link.hidden-pocket.hidden-lap");
         this.lnkCreateAcc = page.locator("//a[@class='link link--accented']");
         this.lnkShopOnline = page.locator(".nav-bar__link.link[href='/collections']");
         this.lnkWeeklySpecials = page.locator(".nav-bar__link.link[href='/pages/weekly-specials']");
@@ -135,7 +135,7 @@ export class HomePage {
 
     //check if Year of Sale link exists
     async isYearofSaleLinkExists(): Promise<boolean> {
-        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Year of Sale' });
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Year of Grocery Giveaways' });
         const isVisible = await link.isVisible();
         console.log(`Year of Sale link is ${isVisible ? 'visible' : 'not visible'}.`);
         return isVisible;
@@ -151,8 +151,16 @@ export class HomePage {
 
     }
 
+    //check if My Account button exists
+    async isMyAccountBtnExists(): Promise<boolean> {
+        const isVisible = await this.btnMyAccount.isVisible();
+        console.log(`My Account button is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
 
 
+ //Home Page link click methods
 
     //Enter text in searxh box
     async enterTextSearch() {
@@ -201,7 +209,7 @@ export class HomePage {
     }
 
 
-    //Home Page link click methods
+   
 
     async clickShopOnlinelnk() {
         try {
