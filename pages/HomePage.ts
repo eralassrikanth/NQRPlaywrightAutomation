@@ -35,7 +35,7 @@ export class HomePage {
         this.lnkShopOnline = page.locator(".nav-bar__link.link[href='/collections']");
         this.lnkWeeklySpecials = page.locator(".nav-bar__link.link[href='/pages/weekly-specials']");
         this.lnkFindAStore = page.locator(".nav-bar__link.link[href='/pages/find-a-store']");
-        this.lnkSignUpNow = page.locator(".nav-bar__link.link[href='/pages/sign-up-now']");
+        this.lnkSignUpNow = page.locator(".nav-bar__link.link[href='/pages/newsletter-sign-up']");
         this.lnkContactUs = page.locator(".nav-bar__link.link[href='/pages/contact-us']");
         this.lnkAboutUs = page.locator(".nav-bar__link.link[href='/pages/about-us']");
         this.lnkBlog = page.locator(".nav-bar__link.link[href='/blogs/news']");
@@ -142,6 +142,15 @@ export class HomePage {
 
     }
 
+    //check if click account link exists
+    async isCreateAccountLinkExists(): Promise<boolean> {
+        const link: any = this.page.locator('a.nav-bar__link', { hasText: 'Create Account' });
+        const isVisible = await link.isVisible();
+        console.log(`Create Account link is ${isVisible ? 'visible' : 'not visible'}.`);
+        return isVisible;
+
+    }
+
 
 
 
@@ -190,6 +199,9 @@ export class HomePage {
             throw error;
         }
     }
+
+
+    //Home Page link click methods
 
     async clickShopOnlinelnk() {
         try {
