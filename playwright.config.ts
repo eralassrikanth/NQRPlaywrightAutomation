@@ -16,7 +16,16 @@ export default defineConfig({
     ['list']
   ],*/
 
-  use: {
+  reporter: [
+    ['html', { open: 'never' }],
+    ['list'],
+    ['line'],
+    ['dot'],
+    ['junit', { outputFile: 'test-results.xml' }],
+    ['json', { outputFile: 'test-results.json' }],
+  
+  ],
+  use: {  
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
