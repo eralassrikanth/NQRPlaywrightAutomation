@@ -1,0 +1,31 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="19.184129000000002">
+<testsuite name="checkLinksInHomePage.spec.ts" timestamp="2025-08-28T08:29:22.943Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.516" errors="0">
+<testcase name="Check links in Home Page" classname="checkLinksInHomePage.spec.ts" time="2.516">
+<system-out>
+<![CDATA[Shop Online link is visible.
+Weekly Specials link is visible.
+Find A Store link is visible.
+Sign Up Now link is visible.
+Contact Us link is visible.
+About Us link is visible.
+Blog link is visible.
+My Account button is visible.
+My Account button is visible.
+Year of Sale link is visible.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="launchApplication.spec.ts" timestamp="2025-08-28T08:29:22.943Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.143" errors="0">
+<testcase name="Verify application and search an item" classname="launchApplication.spec.ts" time="4.143">
+</testcase>
+</testsuite>
+<testsuite name="navigateToEachLink.spec.ts" timestamp="2025-08-28T08:29:22.943Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.48" errors="0">
+<testcase name="Navigate to each link in Home Page" classname="navigateToEachLink.spec.ts" time="6.48">
+</testcase>
+</testsuite>
+<testsuite name="signUpUser.spec.ts" timestamp="2025-08-28T08:29:22.943Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.99" errors="0">
+<testcase name="Sign Up User" classname="signUpUser.spec.ts" time="3.99">
+</testcase>
+</testsuite>
+</testsuites>
