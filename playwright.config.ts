@@ -23,6 +23,7 @@ export default defineConfig({
     ['dot'],
     ['junit', { outputFile: 'test-results.xml' }],
     ['json', { outputFile: 'test-results.json' }],
+    ['allure-playwright', { outputFolder: 'allure-results' }],
   
   ],
   use: {  
